@@ -10,3 +10,9 @@ Consigli del giorno:
     Pensate prima in italiano.
     Dividete in piccoli problemi la consegna.
     Individuate gli elementi di cui avete bisogno per realizzare il programma.
+
+    <!-- SCOMPONIAMO IL PROBLEMA IN MICROPROBLEMI -->
+    1 creare la pagina dove mostri 5 numeri casuali per 30 secondi.
+    2 dopo di che creare una funzione che dopo 30 secondi liberi l'html e cancelli i numeri in pagina.
+    3 tramite il prompt l'utente deve inserire i 5 numeri visualizzati in precedenza.
+    4 in console poi i risultati delle domande, dove si inotra quanti e quali dei numeri sono stati azeccati. 
