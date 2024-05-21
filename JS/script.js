@@ -2,11 +2,12 @@ const pageNumbers =[];
 
 const section = document.querySelector('section.numbers')
 const list = document.createElement('div')
+section.appendChild(list)
 const element = document.createElement('p')
 list.appendChild(element)
 list.classList.add('color')
 
-list.append(pageNumbers.value)
+list.append(pageNumbers)
 
 for (let index = 0; pageNumbers.length < 5 ; index++) {
     let casualNumbers = randomNumbers()
