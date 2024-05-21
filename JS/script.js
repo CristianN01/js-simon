@@ -9,11 +9,14 @@ console.log(pageNumbers)
 const section = document.querySelector('section.numbers')
 const list = document.createElement('div')
 section.appendChild(list)
-const element = document.createElement('p')
-list.appendChild(element)
 list.classList.add('color')
 
-element.append(pageNumbers)
+for (let index = 0; index < pageNumbers.length; index++) {
+    const element = document.createElement('p')
+    element.append(pageNumbers[index])
+    list.appendChild(element)
+}
+// element.append(pageNumbers)
 
 
 // pageNumbers.innerHTML =

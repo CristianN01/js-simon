@@ -5,4 +5,11 @@
 body{
     background-color: aquamarine;
 }
+
+.numbers{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
     
