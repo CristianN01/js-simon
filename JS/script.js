@@ -1,5 +1,11 @@
 const pageNumbers =[];
 
+for (let index = 0; index < 5 ; index++) {
+    let casualNumbers = randomNumbers()
+    pageNumbers.push(casualNumbers)    
+}
+console.log(pageNumbers)
+
 const section = document.querySelector('section.numbers')
 const list = document.createElement('div')
 section.appendChild(list)
@@ -7,13 +13,8 @@ const element = document.createElement('p')
 list.appendChild(element)
 list.classList.add('color')
 
-list.append(pageNumbers)
+element.append(pageNumbers)
 
-for (let index = 0; pageNumbers.length < 5 ; index++) {
-    let casualNumbers = randomNumbers()
-    pageNumbers.push(casualNumbers)    
-}
-    console.log(pageNumbers)
 
 // pageNumbers.innerHTML =
 
