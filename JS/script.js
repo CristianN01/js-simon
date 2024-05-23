@@ -1,5 +1,5 @@
 const pageNumbers =[];
-let userSeconds = 30;
+let userSeconds = 5;
 
 
 for (let index = 0; index < 5 ; index++) {
@@ -18,7 +18,8 @@ list.classList.add('color');
  * 
  */
 for (let index = 0; index < pageNumbers.length; index++) {
-    const element = document.createElement('p');
+    const element = document.createElement('div');
+    element.classList.add('square')
     element.append(pageNumbers[index]);
     list.appendChild(element);
 }
@@ -46,14 +47,26 @@ function responses(){
     for (let index = 0; index < pageNumbers.length; index++) {
         let asks = Number.parseInt(prompt('Scrivi i numeri  che prima sono comparsi in pagina :D'), 10);
         clientNumbers.push(asks);
-        // if (asks[index] === pageNumbers[index]) {
-        //     console.log(asks[index] === pageNumbers[index]);
-        // }
     }
     console.log('I tuoi numeri sono:' +' '+ clientNumbers);
     console.log('I numeri casuali in pagina erano:' +' '+ pageNumbers);
+    console.log(correctAnswers(pageNumbers, clientNumbers));
     return clientNumbers;
 }
 
-setTimeout( responses, 32000);
+function correctAnswers(numbers, guesses){
+    const answers =[];
+    for (let index = 0; index < numbers.length; index++) {
+        if(guesses.includes(numbers[index]) === true){
+            answers.push(true);
+        } else {
+            answers.push(false);
+        }
+        
+    }
+        return answers;
+
+}
+
+setTimeout( responses, 6000);
 

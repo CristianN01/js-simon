@@ -12,4 +12,11 @@ body{
     justify-content: center;
     align-content: center;
 }
+
+.square{
+    border: 3px solid white;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
     
